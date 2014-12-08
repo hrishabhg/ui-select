@@ -42,9 +42,8 @@
             return true;
         }
 
-        if (e.metaKey) return true;
+        return !!e.metaKey;
 
-        return false;
     },
     isFunctionKey: function (k) {
         k = k.which ? k.which : k;
